@@ -17,4 +17,5 @@ WORKDIR /demoDocker
 COPY --from=build /build/target/*.jar demoDocker.jar
 
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","hello.jar"]
+ENTRYPOINT ["java","-jar","demoDocker.jar"]
+
